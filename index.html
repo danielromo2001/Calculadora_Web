@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora Web</h1>
+        <label for="num1">Digite el primer número:</label>
+        <input type="number" id="num1" step="any" placeholder="Primer número">
+
+        <label for="num2">Digite el segundo número:</label>
+        <input type="number" id="num2" step="any" placeholder="Segundo número">
+
+        <div class="operations">
+            <button onclick="calculate('sum')">Suma</button>
+            <button onclick="calculate('subtract')">Resta</button>
+            <button onclick="calculate('multiply')">Multiplicación</button>
+            <button onclick="calculate('divide')">División</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
