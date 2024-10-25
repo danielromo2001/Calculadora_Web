@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora Web</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Web</h1>
+        <input type="number" id="inputA" placeholder="Número 1">
+        <input type="number" id="inputB" placeholder="Número 2">
+        <div>
+            <label>
+                <input type="radio" name="operation" value="add" checked> Sumar
+            </label>
+            <label>
+                <input type="radio" name="operation" value="subtract"> Restar
+            </label>
+            <label>
+                <input type="radio" name="operation" value="multiply"> Multiplicar
+            </label>
+            <label>
+                <input type="radio" name="operation" value="divide"> Dividir
+            </label>
+        </div>
+        <button id="calculateButton">Calcular</button>
+        <div id="result"></div>
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
